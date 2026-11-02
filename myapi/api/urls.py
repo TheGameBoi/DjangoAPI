@@ -1,9 +1,8 @@
-from django.urls import path, include
+from django.urls import path
 from . import views
 
 
 
-urlspatterns = [
-    path("blogposts/", views.BlogPostList.as_view(), name="blogpost-view-create")
-
+urlpatterns = [
+    path("blogposts/", views.BlogPostListCreate.as_view(), name="blogpost-view-create")
 ]
