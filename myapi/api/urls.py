@@ -4,5 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path("blogposts/", views.BlogPostListCreate.as_view(), name="blogpost-view-create")
+    path("blogposts/", views.BlogPostListCreate.as_view(), name="blogpost-view-create"),
+    path("blogposts/<int:pk>", views.BlogPostURD.as_view(), name="update"),
 ]
